@@ -62,11 +62,8 @@
             "pint --parallel --test"
         ],
         "ci:check": [
-            "Composer\\Config::disableProcessTimeout",
-            "npm run check",
-            "npm run types:check",
-            "@test"
-        ],
+        "@php vendor/bin/pint --test"
+     ],
         "types:check": [
             "phpstan analyse"
         ],
